@@ -23,7 +23,7 @@ This is not an emulator or a ROM launcher. The game's 68000 program is translate
 | Windows 10/11 x64 | `Ironclad-Recomp-Windows-x64.zip` | Unzip anywhere, put your ROMs in a `roms/` folder beside `ironclad.exe`, then run it. Bundles SDL2 and the VC++ runtime DLLs. |
 | Steam Deck / Linux x64 | `IronClad-x86_64.AppImage` | `chmod +x IronClad-x86_64.AppImage`, then run it. It auto-finds ROMs beside the AppImage (`roms/`) or in `~/Emulation/roms/ironclad`, `~/roms/ironclad`, `~/roms`; otherwise pass `--rom-path <folder>`. SDL2 is bundled, and the binary is stripped. Built on Ubuntu 22.04 (glibc 2.35) for SteamOS compatibility. |
 
-Both builds contain the same 100% recompiled code and **no game data**: you must supply your own `ironclad` and `neogeo` ROM sets (put them in `roms/`, or point `--rom-path` at them).
+Both builds contain the same 100% recompiled code and **no game ROMs, no Neo Geo BIOS, and no copyrighted game assets**. You must supply your own legally obtained `ironclad` and `neogeo` ROM sets (put them in `roms/`, or point `--rom-path` at them) to play.
 
 ### Steam Deck
 
@@ -38,7 +38,7 @@ Both builds contain the same 100% recompiled code and **no game data**: you must
 - Windows 10/11 x64 (the shipped player bundles SDL2 and the VC++ runtime DLLs), or Linux x64 / SteamOS (the AppImage bundles SDL2).
 - Your own legally obtained ROM dumps: MAME sets `ironclad` (the ID-0220 prototype) and `neogeo`.
 
-No ROMs or BIOS images are distributed. The recompiled program is generated from your dump on your machine at build time; the prebuilt binaries embed that same recompiled program and still require your ROMs to run.
+No ROMs or BIOS images are distributed. The recompiled program is generated from your dump on your machine at build time; the prebuilt binaries embed that same recompiled program and still require your ROMs to run. **Game ROMs and the Neo Geo BIOS are not included** in the downloads. *Iron Clad / Choutetsu Brikin'ger* is © Saurus/SNK and the Neo Geo BIOS is © SNK; this is an unofficial, noncommercial project, not affiliated with or endorsed by them.
 
 ## Build and play
 

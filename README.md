@@ -4,7 +4,9 @@
 
 This repo describes the ROM set and builds the game. The toolkit does all the work; there are no game-specific patches here.
 
-> **No game data here.** You need your own Iron Clad prototype and Neo Geo system ROM dumps (MAME sets `ironclad` and `neogeo`). The recompiled C is generated from your dump on your machine, into `build/`. It is never committed or distributed, and neither is anything else derived from the ROMs.
+> **No ROMs or BIOS here.** This repository and its prebuilt downloads contain no game ROMs, no Neo Geo BIOS, and no copyrighted game assets. You must supply your own legally obtained `ironclad.zip` and `neogeo.zip` (MAME sets) to play. The recompiled C is generated from your dump on your machine, into `build/`, and is never committed.
+>
+> *Iron Clad / Choutetsu Brikin'ger* is © Saurus/SNK, and the Neo Geo BIOS is © SNK. This is an unofficial, noncommercial preservation project, not affiliated with or endorsed by SNK, Saurus, or MAME.
 
 ## Status
 
@@ -75,4 +77,11 @@ The toolkit's [docs/running.md](https://github.com/sp00nznet/neogeorecomp/blob/m
 
 This project's own code (the game description, build files, scripts and docs) is licensed under the **PolyForm Noncommercial License 1.0.0** ([LICENSE](LICENSE)). You may use, modify and share it for noncommercial purposes; commercial use is not permitted.
 
-The `neogeorecomp` toolkit is a separate project under the MIT license and remains under its own terms, as do its bundled components (Musashi, z80 and ymfm each keep their own licence). *Iron Clad* is © Saurus/SNK; this project contains none of its code or data and needs your own dump to do anything.
+The `neogeorecomp` toolkit is a separate project under the MIT license and remains under its own terms, as do its bundled components (Musashi, z80 and ymfm each keep their own licence).
+
+## Legal
+
+- **No game ROMs, Neo Geo BIOS images, or copyrighted game assets are included** in this repository or in the prebuilt release downloads.
+- The prebuilt binaries embed a locally generated recompilation of the program and **still require your own legally obtained ROMs to run**.
+- *Iron Clad / Choutetsu Brikin'ger* and the Neo Geo BIOS are the property of their respective copyright holders (Saurus/SNK). This project is unofficial, noncommercial, and not affiliated with or endorsed by them.
+- You are responsible for obtaining and using ROMs and BIOS dumps lawfully in your jurisdiction.
