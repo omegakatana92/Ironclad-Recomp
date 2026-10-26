@@ -21,7 +21,7 @@ This is not an emulator or a ROM launcher. The game's 68000 program is translate
 | Platform | File | Notes |
 |---|---|---|
 | Windows 10/11 x64 | `Ironclad-Recomp-Windows-x64.zip` | Unzip anywhere, put your ROMs in a `roms/` folder beside `ironclad.exe`, then run it. Bundles SDL2 and the VC++ runtime DLLs. |
-| Steam Deck / Linux x64 | `IronClad-x86_64.AppImage` | `chmod +x IronClad-x86_64.AppImage`, then run with `--rom-path <folder>` holding your ROMs. Built on Ubuntu 22.04 (glibc 2.35) for SteamOS compatibility. |
+| Steam Deck / Linux x64 | `IronClad-x86_64.AppImage` | `chmod +x IronClad-x86_64.AppImage`, then run it. It auto-finds ROMs beside the AppImage (`roms/`) or in `~/Emulation/roms/ironclad`, `~/roms/ironclad`, `~/roms`; otherwise pass `--rom-path <folder>`. SDL2 is bundled, and the binary is stripped. Built on Ubuntu 22.04 (glibc 2.35) for SteamOS compatibility. |
 
 Both builds contain the same 100% recompiled code and **no game data**: you must supply your own `ironclad` and `neogeo` ROM sets (put them in `roms/`, or point `--rom-path` at them).
 
