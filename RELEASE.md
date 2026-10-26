@@ -16,12 +16,29 @@ This is not an emulator or a ROM launcher. The game's 68000 program is translate
 - **Working audio.** The Z80 runs the real sound driver; the YM2610 (FM, SSG, ADPCM) is synthesized and non-silent across the soak.
 - **Controls.** Keyboard and SDL2 gamepads, the toolkit defaults.
 
+## Downloads
+
+| Platform | File | Notes |
+|---|---|---|
+| Windows 10/11 x64 | `Ironclad-Recomp-Windows-x64.zip` | Unzip anywhere, put your ROMs in a `roms/` folder beside `ironclad.exe`, then run it. Bundles SDL2 and the VC++ runtime DLLs. |
+| Steam Deck / Linux x64 | `IronClad-x86_64.AppImage` | `chmod +x IronClad-x86_64.AppImage`, then run with `--rom-path <folder>` holding your ROMs. Built on Ubuntu 22.04 (glibc 2.35) for SteamOS compatibility. |
+
+Both builds contain the same 100% recompiled code and **no game data**: you must supply your own `ironclad` and `neogeo` ROM sets (put them in `roms/`, or point `--rom-path` at them).
+
+### Steam Deck
+
+1. Copy `IronClad-x86_64.AppImage` and your ROM folder to the Deck (e.g. `~/Emulation/roms/ironclad`).
+2. `chmod +x IronClad-x86_64.AppImage`.
+3. In Desktop Mode, add it as a non-Steam game (Games → Add a Non-Steam Game), or launch from Konsole:
+   `./IronClad-x86_64.AppImage --rom-path ~/Emulation/roms/ironclad`
+4. The Deck's built-in pad is an SDL2 gamepad: D-pad/stick move, **A/B/X/Y** = A/B/C/D, **Start** = start, **Back** = coin.
+
 ## Requirements
 
-- Windows 10/11 x64 (the shipped player bundles SDL2 and the VC++ runtime DLLs), or Linux x64 built from source.
+- Windows 10/11 x64 (the shipped player bundles SDL2 and the VC++ runtime DLLs), or Linux x64 / SteamOS (the AppImage bundles SDL2).
 - Your own legally obtained ROM dumps: MAME sets `ironclad` (the ID-0220 prototype) and `neogeo`.
 
-No ROMs, BIOS images, or ROM-derived generated code are distributed in this repository. The recompiler produces the C from your dump on your machine at build time.
+No ROMs or BIOS images are distributed. The recompiled program is generated from your dump on your machine at build time; the prebuilt binaries embed that same recompiled program and still require your ROMs to run.
 
 ## Build and play
 

@@ -15,6 +15,13 @@ This repo describes the ROM set and builds the game. The toolkit does all the wo
 - Frame output is identical to the interpreter's, byte for byte.
 - **Sound works**: the Z80 driver runs and the YM2610 (FM, SSG, ADPCM) is synthesized and played through SDL2.
 
+## Prebuilt downloads
+
+The [releases page](https://github.com/omegakatana92/Ironclad-Recomp/releases) has ready-made builds (they still need your own ROMs):
+
+- **Windows x64**: `Ironclad-Recomp-Windows-x64.zip` — unzip, put your ROMs in `roms/`, run `ironclad.exe`.
+- **Steam Deck / Linux x64**: `IronClad-x86_64.AppImage` — `chmod +x`, run with `--rom-path` pointing at your ROMs.
+
 ## Getting started
 
 ### Step by step
