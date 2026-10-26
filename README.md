@@ -66,4 +66,6 @@ The toolkit's [docs/running.md](https://github.com/sp00nznet/neogeorecomp/blob/m
 
 ## License
 
-The code in this repo is MIT ([LICENSE](LICENSE)). *Iron Clad* is © Saurus/SNK; this project contains none of its code or data and needs your own dump to do anything.
+This project's own code (the game description, build files, scripts and docs) is licensed under the **PolyForm Noncommercial License 1.0.0** ([LICENSE](LICENSE)). You may use, modify and share it for noncommercial purposes; commercial use is not permitted.
+
+The `neogeorecomp` toolkit is a separate project under the MIT license and remains under its own terms, as do its bundled components (Musashi, z80 and ymfm each keep their own licence). *Iron Clad* is © Saurus/SNK; this project contains none of its code or data and needs your own dump to do anything.
